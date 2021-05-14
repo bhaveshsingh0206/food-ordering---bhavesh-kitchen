@@ -1,0 +1,59 @@
+.otp-container .userInput {
+  display: flex;
+  justify-content: center;
+}
+.otp-container {
+  /* background-color: rebeccapurple; */
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  align-items: space-around;
+  justify-content: center;
+}
+.otp {
+  outline: none;
+  margin: 10px;
+  height: 35px;
+  width: 65px;
+  border: none;
+  border-bottom: 1px solid var(--color-grey-light-3);
+  /* border-radius: 5px; */
+  text-align: center;
+  font-family: inherit;
+  font-size: 2rem;
+  background-color: transparent;
+  color: inherit;
+  /* background: #eef2f3; */
+}
+
+.otp-container h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.resend {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  /* background-color: red; */
+}
+.resend button {
+  display: inline-block;
+  outline: none;
+  background: none;
+  border: none;
+  color: inherit;
+  transition: all 0.2s;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.resend button:hover {
+  color: var(--color-secondary);
+}
+
+.resend button:disabled {
+  color: #777;
+  cursor: no-drop;
+}

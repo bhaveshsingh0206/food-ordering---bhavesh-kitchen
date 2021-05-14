@@ -1,0 +1,24 @@
+.btn {
+  /* display: block; */
+  padding: 1.5rem 4rem;
+  border-radius: 100px;
+  background-color: var(--color-secondary);
+  color: var(--color-grey-light-1);
+  outline: none;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.btn:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.btn:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
