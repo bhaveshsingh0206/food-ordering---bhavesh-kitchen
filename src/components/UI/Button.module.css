@@ -14,11 +14,12 @@
 }
 
 .btn:hover {
-  transform: translateY(-1rem);
+  transform: translateY(-0.3rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  background-color: red;
 }
 
 .btn:active {
-  transform: translateY(-0.2rem);
+  transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
