@@ -8,8 +8,8 @@
 }
 
 .menu {
-  flex: 1;
   /* height: 20rem; */
+  flex: 1;
   border-radius: 10px;
   background-color: var(--color-grey-dark-3);
   margin-right: 5rem;
@@ -17,7 +17,8 @@
   /* flex: 10%; */
 }
 .courses {
-  width: 65rem;
+  /* width: 60rem; */
+  flex: 2;
   border-radius: 10px;
   flex-shrink: 0;
   background-color: var(--color-grey-dark-3);
@@ -27,12 +28,11 @@
 }
 
 .cart {
-  flex: 1;
+  flex: 1.5;
   margin-left: 5rem;
-  height: 20rem;
+  /* height: 20rem; */
 
   border-radius: 10px;
-  background-color: red;
-  /* background-color: var(--color-grey-dark-3); */
+  background-color: var(--color-grey-dark-3);
   /* flex: 10%; */
 }

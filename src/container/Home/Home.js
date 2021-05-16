@@ -5,6 +5,7 @@ import { useContext, useEffect } from 'react';
 import {DATABASE} from '../../utils/API'
 import AuthContext from '../../store/authCtx';
 import Courses from './Courses/Courses';
+import Cart from './Cart/Cart';
 const Home = (props) => {
 
     const menuCtx = useContext(MenuContext);
@@ -27,7 +28,7 @@ const Home = (props) => {
     return(<div className={classes.container}>
                 <div className={classes.menu}><Menu /></div>
                 <div className={classes.courses}><Courses /></div>
-                <div className={classes.cart}></div>
+                <div className={classes.cart}><Cart /></div>
             </div>
         )
 }

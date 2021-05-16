@@ -19,3 +19,12 @@
   font-size: 1.6rem;
   font-weight: 500;
 }
+
+.section:not(:last-child) {
+  margin-bottom: 10rem;
+}
+.count {
+  color: var(--color-grey-light-3);
+  font-size: 1.4rem;
+  font-weight: 500;
+}

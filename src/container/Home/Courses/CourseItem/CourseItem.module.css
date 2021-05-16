@@ -5,21 +5,37 @@
   border-bottom: 1px solid #222;
 }
 
+.itemCardSmall {
+  padding: 0rem 0 1rem 0;
+  border-bottom: 1px solid #222;
+}
+
 .itemCard h5 {
   font-size: 1.6rem;
+  margin-bottom: 2rem;
   margin-left: 1rem;
   font-weight: 500;
   display: inline-block;
 }
 
-.itemCard .amount {
+.itemCardSmall h5 {
+  font-size: 1.4rem;
+  margin: 1rem;
+  margin-left: 1rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.itemCard .amount,
+.itemCardSmall .amount {
   margin-left: 3rem;
   font-size: 1.4rem;
   font-weight: 500;
   color: var(--color-grey-light-2);
 }
 
-.itemCard button {
+.itemCard button,
+.itemCardSmall button {
   background-color: transparent;
   outline: none;
   padding: 0.6rem 1rem;
@@ -28,8 +44,8 @@
   color: var(--color-grey-light-2);
   font-size: 1.4rem;
   transition: all 0.2s;
-  /* margin-right: 1rem; */
 }
+
 .add {
   padding: 0.6rem 2.5rem !important;
   font-size: 1.4rem !important;
@@ -57,6 +73,11 @@
   text-align: center;
 }
 
+.itemCardSmall .count {
+  width: 2rem;
+  font-size: 1.3rem !important;
+}
+
 .controlBtns {
   font-size: 1.5rem;
   border: 1px solid var(--color-secondary);
@@ -66,27 +87,24 @@
   align-items: center;
   justify-content: center;
   background-color: var(--color-primary);
-  /* width: 10rem; */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
-.itemCard .circle {
+.itemCard .circle,
+.itemCardSmall .circle {
   display: inline-block;
   width: 1rem;
   height: 1rem;
-  border-radius: 100%;
+  /* border-radius: 100%; */
 }
 
-.circleGreen {
-  background-color: green;
-}
-
-.circleRed {
-  background-color: var(--color-secondary);
+.itemCard .circle img,
+.itemCardSmall .circle img {
+  width: 100%;
+  height: 100%;
 }
 
 .controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #fff; */
 }
