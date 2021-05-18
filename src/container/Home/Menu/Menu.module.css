@@ -20,7 +20,7 @@
   padding-left: 0;
   margin-top: 3rem;
   height: 30rem;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 li {

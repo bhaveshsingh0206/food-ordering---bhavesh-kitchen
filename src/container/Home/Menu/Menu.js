@@ -13,7 +13,7 @@ const Menu = (props) => {
         console.log(event.target)
         console.log(event.target.attributes.i.value)
         menuCtx.selectedItemhandler(Number(event.target.attributes.i.value))
-        console.log("here")
+        
     }
     const categories = menuCtx.categories.map((item, i)=>{
         return (<li key={i}><a onClick={clickHandler} i={i} href={`#${item}`} className={i===menuCtx.selectedItem?classes.active:''}>{item}</a></li>)

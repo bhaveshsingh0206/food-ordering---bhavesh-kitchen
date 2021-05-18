@@ -7,13 +7,14 @@
   font-size: 2rem;
   font-weight: 600;
   margin: 0;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 .content {
-  height: 30rem;
-  overflow: scroll;
-  /* background-color: red; */
+  padding: 1rem 0;
+  max-height: 30rem;
+  overflow-y: auto;
 }
+
 .content img {
   width: 100%;
   height: 80%;
@@ -21,5 +22,25 @@
 
 .text {
   font-size: 1.4rem;
+  color: var(--color-grey-light-3);
+  margin-bottom: 2rem;
   /* margin-bottom: 10rem; */
+}
+.checkout {
+  margin: 5rem 0 2rem 0;
+}
+
+.checkout h3 span {
+  float: right;
+  margin-right: 2rem;
+}
+.checkout h3 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.summary {
+  font-size: 1.6rem;
+  font-weight: 600;
 }

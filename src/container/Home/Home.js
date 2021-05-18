@@ -6,6 +6,7 @@ import {DATABASE} from '../../utils/API'
 import AuthContext from '../../store/authCtx';
 import Courses from './Courses/Courses';
 import Cart from './Cart/Cart';
+
 const Home = (props) => {
 
     const menuCtx = useContext(MenuContext);
@@ -25,11 +26,14 @@ const Home = (props) => {
         
     }, [authCtx.token])
 
-    return(<div className={classes.container}>
-                <div className={classes.menu}><Menu /></div>
-                <div className={classes.courses}><Courses /></div>
-                <div className={classes.cart}><Cart /></div>
-            </div>
+    return(
+        <>
+        <div className={classes.container}>
+            <div className={classes.menu}><Menu /></div>
+            <div className={classes.courses}><Courses /></div>
+            <div className={classes.cart}><Cart /></div>
+        </div>
+        </>
         )
 }
 

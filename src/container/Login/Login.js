@@ -36,12 +36,13 @@ const Login = (props) => {
             console.log(mobileNumber)
             const number = "+91"+mobileNumber;
             console.log('Validate OTP ', number)
-            let recapcha = new firebase.auth.RecaptchaVerifier('recapcha')
+            let recapcha = new firebase.auth.RecaptchaVerifier('recapcha', {theme:'dark'})
             try {
                 const re = await firebase.auth().signInWithPhoneNumber(number, recapcha)
                 setRes(re)
                 console.log(JSON.stringify(re))
                 if(!otpSent) {
+                    recapcha.clear()
                     setOtpSent(true)
                 }
                

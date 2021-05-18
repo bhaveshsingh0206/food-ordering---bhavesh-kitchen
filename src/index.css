@@ -19,10 +19,10 @@ Grey dark 3: #999 */
   --color-grey-light-2: #d5d5d5;
   --color-grey-light-3: #777;
   --color-primary: #121212;
-  --color-secondary: #db2329;
+  --color-secondary: rgb(219, 35, 41);
 
   --color-grey-dark-3: #444;
-  --color-grey-dark-1: #282828;
+  --color-grey-dark-1: #080707;
 
   --color-grey-dark-3: #181818;
 }
@@ -41,7 +41,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  overflow: hidden;
   background-color: var(--color-primary);
   color: var(--color-grey-light-1);
 
@@ -55,4 +55,25 @@ code {
 
 #root {
   height: 100%;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 11px;
+}
+::-webkit-scrollbar-button {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid var(--color-grey-dark-3);
+  /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, 0.5);
 }

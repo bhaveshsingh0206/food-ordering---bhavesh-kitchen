@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 
 
 const MenuContext = React.createContext({
@@ -40,7 +40,8 @@ export const MenuContextProvider = (props) => {
             
             
             if(j===c.length-1) {
-                setCartContext(obj);
+                if((Object.keys(cartContext).length===0))
+                    setCartContext(obj);
             }
         })
         

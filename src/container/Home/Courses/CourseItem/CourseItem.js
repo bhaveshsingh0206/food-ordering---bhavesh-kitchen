@@ -1,5 +1,5 @@
 import classes from './CourseItem.module.css';
-import { useContext, useEffect, useState } from 'react';
+import { useContext } from 'react';
 import MenuContext from '../../../../store/menuCtx';
 import vegIcon from '../../../../assets/veg.png';
 import nonvegIcon from '../../../../assets/nonveg.png';
@@ -8,14 +8,14 @@ const CourseItem = (props) => {
 
     const menuCtx = useContext(MenuContext);
     // const [active, setActive] = useState(Number(menuCtx.cartContext[`${props.id}`])===0)
-    let count = Number(menuCtx.cartContext[`${props.id}`])
-    
+    let count=Number(menuCtx.cartContext[`${props.id}`]); 
+    console.log(menuCtx.cartContext)
     const activeHandler = () => {
         count=count+1;
         update()
            
     }
-
+    
     const update = () => {
         if(count<0) return
     

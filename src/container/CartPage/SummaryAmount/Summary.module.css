@@ -1,0 +1,88 @@
+.container {
+  padding: 2rem;
+}
+
+.bill {
+  font-size: 1.4rem;
+  padding: 2rem;
+  background: var(--color-primary);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.bill h6 {
+  margin: 0;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-grey-light-3);
+}
+.row p {
+  margin: 0;
+}
+.row p span {
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+hr {
+  border: 1px dashed var(--color-grey-light-3);
+  border-style: none none dashed;
+  /* color: var(--color-grey-light-1);
+  background-color: var(--color-grey-light-1); */
+}
+
+.bold {
+  margin-top: 1rem !important;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--color-grey-light-1);
+}
+.promoCode {
+  margin-bottom: 2rem;
+}
+.promoCode button {
+  width: 100%;
+  padding: 1.5rem 4rem;
+  color: inherit;
+  outline: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #04a812a1;
+  border: 1px dashed #04a812a1;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.promoCode button:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  color: #07d818a1;
+  border: 1px dashed #07d818a1;
+}
+
+.promoCode button:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.strike {
+  text-decoration: line-through;
+  font-weight: 800;
+}
+
+.newPrice {
+  font-weight: 400;
+  text-decoration: none !important;
+}

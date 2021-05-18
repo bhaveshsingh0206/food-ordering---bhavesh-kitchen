@@ -7,7 +7,6 @@ const Courses = (props) => {
     const menuCtx = useContext(MenuContext);
     const menuData = menuCtx.menu;
     const categories = menuCtx.categories;
-    const cartContext = menuCtx.cartContext
 
     
 

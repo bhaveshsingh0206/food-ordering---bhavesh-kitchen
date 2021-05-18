@@ -11,6 +11,7 @@
   border: none;
   font-size: 1.4rem;
   font-weight: 700;
+  /* width: 100%; */
 }
 
 .btn:hover {
@@ -22,4 +23,10 @@
 .btn:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.special {
+  width: 100% !important;
+  /* border-radius: 20px !important; */
+  /* background: #000; */
 }
