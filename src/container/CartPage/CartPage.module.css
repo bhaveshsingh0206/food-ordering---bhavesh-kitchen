@@ -1,7 +1,7 @@
 .container {
   padding: 2rem 10rem;
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
   align-items: flex-start;
 }
 
@@ -92,4 +92,7 @@
   display: flex;
   /* justify-content: space-between; */
   gap: 2rem;
+}
+
+textarea {
 }

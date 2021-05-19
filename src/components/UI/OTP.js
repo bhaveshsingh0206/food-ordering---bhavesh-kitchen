@@ -50,7 +50,7 @@ const OTP = (props) => {
 
 return(
     <div className={classes["otp-container"]}>
-		<h1>Enter the code send to your mobile device below to log in!</h1>
+		<h1>Enter the code send to your mobile device below.</h1>
 		<div className={classes.userInput}>
 			<input ref={focusRef} className={classes.otp} type="text" id='ist' maxLength="1" onKeyUp={()=>{clickHandler('ist', 'second', 0)}} />
 			<input className={classes.otp} type="text" id="second" maxLength="1" onKeyUp={()=>{clickHandler('second', 'third', 1)}} />

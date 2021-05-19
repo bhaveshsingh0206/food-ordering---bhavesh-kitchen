@@ -9,7 +9,7 @@ const CourseItem = (props) => {
     const menuCtx = useContext(MenuContext);
     // const [active, setActive] = useState(Number(menuCtx.cartContext[`${props.id}`])===0)
     let count=Number(menuCtx.cartContext[`${props.id}`]); 
-    console.log(menuCtx.cartContext)
+    // console.log(menuCtx.cartContext)
     const activeHandler = () => {
         count=count+1;
         update()

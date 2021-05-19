@@ -8,7 +8,7 @@ const Button = (props) => {
     }
 
 return(
-    <button onClick={props.click} className={cla}>{props.children}</button>
+    <button disabled={props.dis} onClick={props.click} className={cla}>{props.children}</button>
 );
 }
 

@@ -1,0 +1,6 @@
+.header {
+  /* padding: 0; */
+  /* height: 2rem; */
+  background-color: var(--color-grey-dark-3);
+  border-bottom: 1px solid var(--color-grey-dark-1);
+}

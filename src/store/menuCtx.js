@@ -10,7 +10,8 @@ const MenuContext = React.createContext({
     setCartItems: (item) => {},
     selectedItemhandler: (id) => {},
     editCartItems: (id) => {},
-    cartContext:{}
+    cartContext:{},
+    clearCart: () => {}
 })
 
 
@@ -89,7 +90,25 @@ export const MenuContextProvider = (props) => {
             })
         
     }
+    const clearCartHandler = () => {
+        setCartItems([]);
+        let obj = {};
+        const c = Object.keys(menu)
+        // console.log(c)
+        c.forEach((key, j)=>{
 
+            for(var i=0; i<menu[key].length; i++) {
+                obj[`${menu[key][i].id}`] = 0;
+            }
+
+            
+            
+            if(j===c.length-1) {
+                if((Object.keys(cartContext).length===0))
+                    setCartContext(obj);
+            }
+        })
+    }
     const contextValue = {
         menu:menu,
         categories:categories,
@@ -99,7 +118,8 @@ export const MenuContextProvider = (props) => {
         cartItems: cartItems,
         setCartItems:setCartItemsHandler,
         editCartItems:editCartItemsHandler,
-        cartContext:cartContext
+        cartContext:cartContext,
+        clearCart: clearCartHandler
     }
     
     return (<MenuContext.Provider value={contextValue}>

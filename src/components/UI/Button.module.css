@@ -30,3 +30,7 @@
   /* border-radius: 20px !important; */
   /* background: #000; */
 }
+.btn:disabled {
+  background-color: var(--color-grey-light-3);
+  cursor: not-allowed;
+}

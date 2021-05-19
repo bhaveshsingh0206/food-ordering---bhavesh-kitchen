@@ -1,0 +1,41 @@
+.toast {
+  position: absolute;
+  left: 50%;
+  bottom: 5rem;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.toast span {
+  border-radius: 100px;
+  padding: 1.25rem 5rem;
+  background-color: rgba(219, 35, 41, 0.5);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  color: var(--color-grey-light-1);
+  font-size: 1.3rem;
+  opacity: 1;
+  animation: fadeIn 0.5s 0s forwards, fadeout 0.5s 1.5s forwards;
+  text-transform: capitalize;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    /* display: none; */
+  }
+}

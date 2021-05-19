@@ -6,7 +6,7 @@
   font-family: inherit;
   color: inherit;
   font-size: 1.5rem;
-  padding: 2rem 1rem;
+  padding: 2rem 12rem 2rem 1rem;
   border-radius: 2px;
   background-color: var(--color-primary);
   border: 1px solid #444;
@@ -39,7 +39,7 @@
 
 .form__input:not(:placeholder-shown) {
   font-size: 1.5rem;
-  padding: 2.5rem 1rem 1.5rem 1rem;
+  padding: 2.5rem 12rem 1.5rem 1rem;
 }
 
 .form__input:disabled {
@@ -62,4 +62,22 @@
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+.form__group button {
+  position: absolute;
+  top: 50%;
+  right: -3rem;
+  transform: translate(-50%, -50%);
+  outline: none;
+  background-color: transparent;
+  color: var(--color-grey-light-3);
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s;
+}
+
+.form__group button:hover {
+  color: var(--color-secondary);
+  /* transform: scale(1.1); */
 }
