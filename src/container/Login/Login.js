@@ -103,7 +103,7 @@ const Login = (props) => {
                 const time = result["user"]["stsTokenManager"]["expirationTime"];
                 console.log(time)
                 
-                const authTime = new Date().getTime() + 72000000
+                const authTime = new Date().getTime() + 1800000
                 authCtx.login(token, authTime)
                 // console.log(result)
                 setTimeout(()=>{
