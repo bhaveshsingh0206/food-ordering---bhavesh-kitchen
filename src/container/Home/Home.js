@@ -34,7 +34,7 @@ const Home = (props) => {
                 menuCtx.setMenuHandler(data)
                 setLoading(false)
             } catch(error) {
-                console.log(error)
+                
                 setLoading(false)
                 setMessage('Some error occured while communicating with the server')
                 setToast(true)

@@ -33,19 +33,19 @@ const Orders = (props) => {
                 const res = await AUTH.post(`/accounts:lookup?key=${WEB_KEY}`,{idToken: authCtx.token})
                 let data = await res.data
                 const userID = data.users[0].localId
-                console.log(userID)
+                // 
                 const userData = await DATABASE.get(`/users.json?auth=${authCtx.token}&orderBy="uid"&startAt="${userID}"&endAt="${userID}"`)
                 data = await userData.data
                 const datakeys = Object.keys(data)
                 data = data[datakeys[0]]
-                console.log(data)
+                // 
                 const ords = data.orders
                 if(ords) {
                     const orderiD = Object.keys(ords)
                     orderiD.reverse()
                     const data = orderiD.map((id)=>{
                         const order = ords[id];
-                        // console.log(order)
+                        // 
                         let items = order.items.map((item, i)=>{
                             
                             return `${item.quantity} x ${item.name}${i==order.items.length-1?'':', '}`
@@ -73,11 +73,12 @@ const Orders = (props) => {
                     })
                     setOrders(data)
                     setLoading(false)
+                    
                 }
-            
+                setLoading(false)
             
             } catch(error) {
-                console.log(error)
+                // 
                 setToast(true)
                 setLoading(false)
                 setMessage('Some error occured while communicating with the server')

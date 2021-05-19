@@ -19,7 +19,7 @@ const amount = cartItems.reduce((prev, item)=>{
     return prev+item.price*item.quantity
 }, 0)
 const totalItems = cartItems.reduce((prev, item)=>{
-    console.log(prev)
+    
     return prev+item.quantity
 }, 0)
 

@@ -45,18 +45,18 @@ const Login = (props) => {
             if(mobileNumber.length!==Number(10)) {
                 setToast(true)
                 setMessage('Please enter valid phone number')
-                // console.log("Enter Mobile Number")
+                // 
                 return
             }
             if(!name) {
-                console.log("Pl")
+                
                 setToast(true)
                 setMessage('Please enter name')
                 return
             }
-            console.log(mobileNumber)
+            
             const number = "+91"+mobileNumber;
-            console.log('Validate OTP ', number)
+            
             
            
             try {
@@ -66,7 +66,7 @@ const Login = (props) => {
                 const re = await firebase.auth().signInWithPhoneNumber(number, recapcha)
                 setLoading(true)
                 setRes(re)
-                console.log(JSON.stringify(re))
+                
                 if(!otpSent) {
                     recapcha.clear()
                     setOtpSent(true)
@@ -78,7 +78,7 @@ const Login = (props) => {
                 
                 
             } catch(error) {
-                console.log(error);
+                
                 setToast(true)
                 setMessage('Some error occured while communicating with the server')
             }
@@ -87,13 +87,13 @@ const Login = (props) => {
             setLoading(true)
             try {
                 // setLoading(true)
-                console.log(otp)
+                
                 let result = await res.confirm(otp);
                 result = await JSON.parse(JSON.stringify(result))
                 setToast(true)
                 setMessage('Logged In')
                 const uid = result.user.uid
-                console.log(result)
+                
                 const token = result["user"]["stsTokenManager"]["accessToken"];
                 if(result.additionalUserInfo) {
                     if(result.additionalUserInfo.isNewUser) {
@@ -101,11 +101,11 @@ const Login = (props) => {
                     }
                 }
                 const time = result["user"]["stsTokenManager"]["expirationTime"];
-                console.log(time)
+                
                 
                 const authTime = new Date().getTime() + 1800000
                 authCtx.login(token, authTime)
-                // console.log(result)
+                // 
                 setTimeout(()=>{
                     history.replace('/')
                 }, 2000)
@@ -113,7 +113,7 @@ const Login = (props) => {
             } catch(error) {
                 setToast(true)
                 setMessage('Some error occured while communicating with the server')
-                console.log(error);
+                
             } 
             setLoading(false)  
         }

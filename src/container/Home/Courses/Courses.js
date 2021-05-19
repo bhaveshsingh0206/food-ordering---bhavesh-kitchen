@@ -13,7 +13,7 @@ const Courses = (props) => {
     const data = categories.map((key, j)=>{
         
         const innereData = menuData[key].map((item, i)=>{
-                // console.log(item.name,"o",Number(cartContext[item.id]))
+                // 
             return <CourseItem small={false} key={item.id} id={item.id} name={item.name} price={item.price} isVeg={item.isVeg} />
         })
 

@@ -31,7 +31,7 @@ export const MenuContextProvider = (props) => {
         setCategories(Object.keys(menu))
         let obj = {};
         const c = Object.keys(menu)
-        // console.log(c)
+        // 
         c.forEach((key, j)=>{
 
             for(var i=0; i<menu[key].length; i++) {
@@ -53,7 +53,7 @@ export const MenuContextProvider = (props) => {
     }
 
     const setCartItemsHandler = (item) => {
-        // console.log("setCartItemsHandler")
+        // 
         setCartItems((prevState)=>{
             return [...prevState, item]
         })
@@ -68,15 +68,15 @@ export const MenuContextProvider = (props) => {
     
 
     const editCartItemsHandler = (count, idx, id) => {
-            // console.log("Updating ", count)
+            // 
             setCartItems((prev)=>{
                 let cartItems = [...prev];
                 if(count===0) {
-                    // console.log("Count was 0")
+                    // 
                     cartItems.splice(idx, 1)
                     return cartItems
                 } else {
-                    // console.log("Count was not 0")
+                    // 
 
                     cartItems[idx].quantity = count
                 return cartItems
@@ -94,7 +94,7 @@ export const MenuContextProvider = (props) => {
         setCartItems([]);
         let obj = {};
         const c = Object.keys(menu)
-        // console.log(c)
+        // 
         c.forEach((key, j)=>{
 
             for(var i=0; i<menu[key].length; i++) {

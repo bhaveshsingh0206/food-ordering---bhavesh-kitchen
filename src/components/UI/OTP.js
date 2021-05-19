@@ -9,7 +9,7 @@ const OTP = (props) => {
 	// const [resendOTP, setRecentOTP] = useState(false)
 	
 	useEffect(()=>{
-		console.log(typeof(seconds))
+		
 		if(seconds===Number(0)) {
 			clearInterval(timer);
 			// setRecentOTP(true)

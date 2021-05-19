@@ -10,8 +10,8 @@ const Menu = (props) => {
     
 
     const clickHandler = (event) => {
-        console.log(event.target)
-        console.log(event.target.attributes.i.value)
+        
+        
         menuCtx.selectedItemhandler(Number(event.target.attributes.i.value))
         
     }

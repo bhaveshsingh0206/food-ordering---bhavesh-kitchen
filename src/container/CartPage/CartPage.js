@@ -92,9 +92,9 @@ const CartPage = (props) => {
 
     async function orderHandler(finalAmount) {
        
-        console.log(finalAmount)
+        
         if(address===""||name===""||mobileNumber==="") {
-            console.log("Check details")
+            
             setError(true)
             setErrorMessage('Please fill in all the details')
             return;
@@ -105,10 +105,10 @@ const CartPage = (props) => {
             return
         }
         setLoading(true)
-        console.log(menuCtx.cartItems)
+        
         setError(false)
         setError('')
-        // console.log("userKey ", userKey)
+        // 
         try{
             const res = await DATABASE.post(`/users/${userKey}/orders.json?auth=${authCtx.token}`,{ items:[...menuCtx.cartItems],ordedDate:Date().toString(), address:address, totalCost:finalAmount})
             
@@ -131,13 +131,13 @@ const CartPage = (props) => {
                 const res = await AUTH.post(`/accounts:lookup?key=${WEB_KEY}`,{idToken: authCtx.token})
                 let data = await res.data
                 const userID = data.users[0].localId
-                console.log(userID)
+                
                 const userData = await DATABASE.get(`/users.json?auth=${authCtx.token}&orderBy="uid"&startAt="${userID}"&endAt="${userID}"`)
                 data = await userData.data
                 const datakeys = Object.keys(data)
                 data = data[datakeys[0]]
                 setUserKey(userID)
-                console.log(data)
+                
                 
                 setMobileNumber("+91"+data.phoneNumber)
                 setName(data.name)
