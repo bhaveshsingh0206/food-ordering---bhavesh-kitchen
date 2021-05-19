@@ -80,6 +80,7 @@ const CartPage = (props) => {
               setLoading(false)
             }
         );
+        setLoading(false)
     }
     useEffect(() => {
         if (error) {
