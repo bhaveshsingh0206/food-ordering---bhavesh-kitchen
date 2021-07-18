@@ -1,28 +1,48 @@
-Recrutes
-About
-Recrutes is a React.js Web Application and Flutter Cross-platform Mobile Application placement portal for BE students created for D.J. Sanghvi College.
+# Bhavesh Kitchen
 
-View the application live
+### About
 
-Technology Stack
-Web Frontend developed using React.js
-Mobile Frontend developed using Flutter
-Backend developed using Node.js/Express
-User registration using Google Login
-Data stored in MongoDB
-Features
-User
+Bhavesh Kitchen is a React.js Web Application for ordering meals from a restaurant created for the sole purpose of learning.
 
-Can login using Google
-Gets list of jobs available
-Gets information about each job
-Gets information about students placed in a particular jobs
-Gets statistics about jobs in the college
-Gets feed about recent placements
-Can favourite any job
-Gets important notifications on browser as well as mobile
-Coordinator (Additional Features)
+#### [View the application live](https://restaurant-404f7.web.app/login)
 
-Can add a job
-Can mark placed students
-Can send a notification to department or applicants of a particular job
+### Technology Stack
+
+1. Web Frontend developed using React.js
+
+2. Backend developed using Firebase
+
+3. User registration with Firebase OTP Authenication
+
+4. Data stored in Firebase
+
+### Features
+
+#### User
+
+- Simple OTP Authenication.
+- Add delicious items to the cart.
+- Checkout by applying promocode.
+- View all past orders.
+- User Friendly Interface.
+- Auto deteect location with Google Location Api.
+
+## React Screenshots
+
+### Login
+
+![Login](images/6.png)
+![Login](images/7.png)
+
+### Dashboard
+
+![Profile](images/4.png)
+![Profile](images/5.png)
+
+### Checkout
+
+![Chat](images/2.png)
+
+### Past Orders
+
+![Posts](images/1.png)
